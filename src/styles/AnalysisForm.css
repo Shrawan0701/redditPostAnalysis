@@ -1,0 +1,180 @@
+.analysis-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-header h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.form-header p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.analysis-type-selector {
+  margin-bottom: 2rem;
+}
+
+.radio-option {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.radio-option:hover {
+  border-color: #3498db;
+  background-color: #f8f9fa;
+}
+
+.radio-option input[type="radio"] {
+  margin-right: 1rem;
+}
+
+.radio-option input[type="radio"]:checked + .radio-text {
+  color: #3498db;
+}
+
+.radio-option:has(input[type="radio"]:checked) {
+  border-color: #3498db;
+  background-color: #e3f2fd;
+}
+
+.radio-text {
+  display: block;
+}
+
+.radio-text strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.radio-text small {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.reddit-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.reddit-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.help-text {
+  display: block;
+  margin-top: 0.5rem;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.analyze-button {
+  width: 100%;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.analyze-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+}
+
+.analyze-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.examples {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e1e8ed;
+}
+
+.examples h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.example-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.example-category h4 {
+  color: #555;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.example-button {
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem 0.5rem 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.example-button:hover {
+  background-color: #d5dbdb;
+  border-color: #95a5a6;
+}
+
+@media (max-width: 768px) {
+  .analysis-form-container {
+    padding: 1.5rem;
+    margin: 0 0.5rem;
+  }
+
+  .form-header h2 {
+    font-size: 1.5rem;
+  }
+}
