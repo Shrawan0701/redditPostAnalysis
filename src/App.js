@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Reddit Analysis Platform</h1>
+        <h1>Analyze Subreddits</h1>
         <p>Transform Reddit data into actionable insights with AI-powered analysis</p>
       </header>
 
